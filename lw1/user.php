@@ -3,7 +3,7 @@ class User
 {
     public string $username;
     public int $password;
-    public object $birthday;
+    public DateTime $birthday;
 
     public function __construct(string $username, int $password, string $birthday)
     {
