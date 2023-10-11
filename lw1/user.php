@@ -1,13 +1,14 @@
 <?php
-class User{
-    public $username;
-    public $password;
-    public $birthday;   
+class User
+{
+    public string $username;
+    public int $password;
+    public object $birthday;
 
-    public function __construct($username, $password, $birthday)
+    public function __construct(string $username, int $password, string $birthday)
     {
-    $this->username = $username;
-    $this->password = $password;
-    $this->birthday = new DateTime($birthday);
+        $this->username = $username;
+        $this->password = $password;
+        $this->birthday = new DateTime($birthday);
     }
 }

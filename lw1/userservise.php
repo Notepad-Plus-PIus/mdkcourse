@@ -1,7 +1,7 @@
 <?php
 class UserService
 {
-    public static function sortByUsername($users, $flag = true)
+    public static function sortByUsername(array $users, bool $flag = true)
     {
         usort($users, function ($x, $y) use ($flag) {
             $result = $x->username <=> $y->username;
@@ -11,7 +11,7 @@ class UserService
         return $users;
     }
 
-    public static function sortByBirthday($users, $flag = true)
+    public static function sortByBirthday(array $users, bool $flag = true)
     {
         usort($users, function ($x, $y) use ($flag) {
             $result = $x->birthday <=> $y->birthday;
@@ -21,4 +21,3 @@ class UserService
         return $users;
     }
 }
-?>
