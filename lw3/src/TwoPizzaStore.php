@@ -1,4 +1,6 @@
 <?php
+namespace Ya\Test;
+
 require '../vendor/autoload.php';
 
 use Lw3\Library\PizzaStore;

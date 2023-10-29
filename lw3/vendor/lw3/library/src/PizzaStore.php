@@ -3,7 +3,7 @@ namespace Lw3\Library;
 
 abstract class PizzaStore
 {
-    abstract public function createPizza($type);
+    abstract public function createPizza(string $type);
 
     public function orderPizza($type)
     {

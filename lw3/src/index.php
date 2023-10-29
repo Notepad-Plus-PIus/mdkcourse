@@ -1,11 +1,11 @@
 <?php
-require 'OnePizzaStore.php';
-require 'TwoPizzaStore.php';
-require 'PepperoniPizza.php';
-require 'MargaritaPizza.php';
-require 'FourCheesesPizza.php';
-require 'HawaiianPizza.php';
+require '../vendor/autoload.php';
+
+use Ya\Test\TwoPizzaStore;
+use Ya\Test\OnePizzaStore;
 
 $pizzaStore = new OnePizzaStore();
+$pizza = new TwoPizzaStore();
 
 $pizzaStore->orderPizza('margarita');
+$pizza->orderPizza('hawaiian');
