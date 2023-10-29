@@ -1,5 +1,6 @@
 <?php
-require 'vendor/autoload.php';
+require '../vendor/autoload.php';
+
 use Lw3\Library\Pizza;
 
 class PepperoniPizza extends Pizza
